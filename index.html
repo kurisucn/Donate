@@ -1,0 +1,107 @@
+<html>
+
+<head>
+    <title>KurisuCat Donate Page</title>
+    <!--标题请自定义-->
+
+    <!--MDUI CSS JS start-->
+    <!-- MDUI CSS -->
+        <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/css/mdui.min.css"
+        integrity="sha384-2PJ2u4NYg6jCNNpv3i1hK9AoAqODy6CdiC+gYiL2DVx+ku5wzJMFNdE3RoWfBIRP"
+        crossorigin="anonymous"
+        />
+
+        <!-- MDUI JavaScript -->
+        <script
+        src="https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/js/mdui.min.js"
+        integrity="sha384-aB8rnkAu/GBsQ1q6dwTySnlrrbhqDwrDnpVHR2Wgm8pWLbwUnzDcIROX3VvCbaK+"
+        crossorigin="anonymous"
+        ></script>
+    <!--MDUI CSS JS end-->
+
+    <!--核心代码 strat-->
+    <script language='javascript'>
+        function myFunction() {
+            var ua = navigator.userAgent.toLowerCase();
+            if (ua.match(/MicroMessenger/i) == "micromessenger") {
+                mdui.alert('微信用户请点击右上角 “ … ” 点击 “在浏览器打开” 。', '提示'); // 此处为在 微信 中的内置浏览器显示的内容，使用 MDUI 的 alert 。我为什么要这么做：因为腾讯有的时候会把你的链接封杀掉，为了防止这种现象，使用这种方式可能可以降低被封杀的风险。
+            } else if (ua.match(/QQ/i) == "qq") {
+                mdui.alert('QQ用户请点击右上角 “ + ” 找到 “浏览器” 按钮打开 。', '提示'); // 此处为在 QQ 中的内置浏览器显示的内容，使用 MDUI 的 alert 。我为什么要这么做：因为腾讯有的时候会把你的链接封杀掉，为了防止这种现象，使用这种方式可能可以降低被封杀的风险。
+            } else {
+                setTimeout(function(){
+                    document.location = './personal.html'; // 请将此处的链接改成你的。
+                },3000);
+                
+            }
+        }
+    </script>
+    <!--核心代码 end-->
+
+</head>
+
+<body onload="myFunction()" class="mdui-theme-primary-grey">
+    <!--使用 onload 在 body 可以在打开网页的时候可以运行“核心代码”（雾-->
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <!--上面这行 meta 的目的是为了可以在手机上也可以有良好的观感，而不是看起来很小-->
+
+
+    <div class="mdui-container" style="margin: auto;">
+        <!--标题-->
+        <h1>KurisuCat Donate Page</h1>
+        <!--副标题-->
+        <h2>正在打开 KurisuCat Donate Page</h2>
+        <h4>Opening KurisuCat Donate Page</h4>
+
+
+        <div class="mdui-progress">
+            <div class="mdui-progress-indeterminate"></div>
+          </div><br><span>如果正常的话，应在三秒钟后跳转。 If normal, jump in three seconds.</span><br>
+
+
+        <br>
+        <!--提示-->
+        <span>如果您仍滞留与此，请检查您的网络环境。或使用浏览器打开而非 QQ 、 WeChat 内置的浏览器 。</span><br>
+        <span>If you are still stuck with this, please check your network environment. Or use the browser instead of QQ, WeChat built-in browser.</span><br><br>
+
+        <div class="mdui-divider"></div>
+        <!--分割线-->
+        <br><br>
+        <!--start-->
+        <!--推荐自定义的区域-->
+
+        <!--MDUI 中的卡片 start-->
+        <div class="mdui-card">
+            <!-- 卡片的标题和副标题 -->
+            <div class="mdui-card-primary">
+                <div class="mdui-card-primary-title">何为捐赠？</div>
+                <div class="mdui-card-primary-subtitle">What is "Donate" ?</div>
+            </div>
+            <!-- 卡片的内容 -->
+            <div class="mdui-card-content">
+                动词。指没有索求地把有价值的东西给予别人。<br>
+                To give money or goods to help a person or organization.<br>
+                To give something, esp. to an organization, without wanting anything in exchange.
+            </div>
+        </div>
+
+        <!--推荐自定义的区域-->
+        <!--end-->
+
+        <br><br>
+        <div class="mdui-divider"></div>
+        <!--分割线-->
+        <br><br>
+        <!--使用的时候求求你们能不能别把这两行删掉啊我求你们了awa-->
+        <a class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent"
+            href="https://github.com/kurisucn">Kurisu Service 强力驱动。 Powered by Kurisu Service.<a></a>&nbsp;&nbsp;
+            <a class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent"
+                href="https://github.com/kurisucat">©2020 KurisuCat<a>
+                    <!--使用的时候求求你们能不能别把这两行删掉啊我求你们了awa-->
+
+    </div>
+</body>
+
+</html>
